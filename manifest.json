@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Next Button Clicker",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Next' button when it appears.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
